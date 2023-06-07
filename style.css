@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.b {
+    border: 1px solid red;
+}
+
+body {
+    background-color: hsl(185, 75%, 39%);
+
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.main_component {
+    border-radius: 20px;
+    width: 300px;
+    position: relative;
+    background-color: white;
+
+}
+
+.main_component::after {
+    position: absolute;
+    content: url(./assests/images/bg-pattern-top.svg);
+    height: 100%;
+    top: -43rem;
+    left: -51rem;
+    width: 100%;
+    z-index: -1;
+}
+
+.main_component::before {
+    position: absolute;
+    content: url(./assests/images/bg-pattern-bottom.svg);
+    height: 100%;
+    top: 9rem;
+    right: -5rem;
+    width: 100%;
+    z-index: -1;
+}
+
+
+.image {
+
+    background: no-repeat center/cover url("./assests/images/bg-pattern-card.svg");
+    width: 100%;
+    height: 120px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+}
+
+.center_item h1 {
+    font-weight: 700p;
+    font-size: 16px;
+    font-family: 'Kumbh Sans', sans-serif;
+
+}
+
+
+.center_item P {
+    font-weight: 400;
+    font-size: 14px;
+    font-family: 'Kumbh Sans', sans-serif;
+    margin-top: 6px;
+}
+
+.center_item {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 70px 0 25px 0;
+    position: relative;
+
+}
+
+.victor {
+    position: absolute;
+    bottom: 3.8rem;
+    padding: 5px;
+    background-color: white;
+    border-radius: 50%;
+
+}
+
+.victor img {
+    border-radius: 50%;
+    width: 80px;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    padding: 15px 20px 15px;
+
+}
+
+.content h2 {
+    font-weight: 700;
+    font-size: 18px;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+.content p {
+    font-weight: 400;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 11px;
+
+}
